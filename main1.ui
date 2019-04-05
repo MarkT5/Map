@@ -43,7 +43,7 @@
      <string>OK</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit">
+   <widget class="QLineEdit" name="lon">
     <property name="geometry">
      <rect>
       <x>0</x>
@@ -53,7 +53,7 @@
      </rect>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_2">
+   <widget class="QLineEdit" name="lat">
     <property name="geometry">
      <rect>
       <x>100</x>
@@ -63,7 +63,7 @@
      </rect>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_3">
+   <widget class="QLineEdit" name="delta1">
     <property name="geometry">
      <rect>
       <x>200</x>
@@ -73,7 +73,7 @@
      </rect>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_4">
+   <widget class="QLineEdit" name="delta2">
     <property name="geometry">
      <rect>
       <x>300</x>

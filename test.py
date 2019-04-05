@@ -14,16 +14,17 @@ class MyWidget(QMainWindow):
         response = None
         api_server = "http://static-maps.yandex.ru/1.x/"
 
-        lon = 
-        lat = "55.703118"
-        delta = "0.002"
+        lon = self.lon.text()
+        lat = self.lat.text()
+        delta1 = self.delta1.text()
+        delta2 = self.delta2.text()
 
         params = {
             "ll": ",".join([lon, lat]),
-            "spn": ",".join([delta, delta]),
+            "spn": ",".join([delta1, delta2]),
             "l": "map"
         }
-        response = requests.get(api_server, params=params)
+
         try:
 
             response = requests.get(api_server, params=params)
