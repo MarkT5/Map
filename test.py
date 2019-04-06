@@ -12,6 +12,7 @@ class MyWidget(QMainWindow):
         self.pushButton.clicked.connect(self.run)
 
     def keyPressEvent(self, event):
+        print(event.key())
         if event.key() == 16777238:
             if float(self.delta1.text()) * 2 < 90 :
                 self.delta1.setText(str(float(self.delta1.text()) * 2))
@@ -33,6 +34,8 @@ class MyWidget(QMainWindow):
             else:
                 self.delta2.setText(str(0.001))
             self.run()
+        if event.key() == 16777235:
+            self.delta1
 
     def run(self):
         response = None
