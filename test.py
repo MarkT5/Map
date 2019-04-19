@@ -4,16 +4,13 @@ from PyQt5.QtWidgets import QApplication, QWidget, QMainWindow
 from PyQt5.QtGui import QPixmap
 import requests
 
-class Window2(QWidget):
-    def __init__(self):
-        super().__init__()
-        uic.loadUi('help.ui', self)
+
 
 class MyWidget(QMainWindow):
     def __init__(self):
         super().__init__()
         uic.loadUi('main1.ui', self)
-        self.w2 = Window2()
+       
 
         #self.pushButton.clicked.connect(self.watch)
         self.pushButton.clicked.connect(self.run)
@@ -22,9 +19,6 @@ class MyWidget(QMainWindow):
         self.delta1.setText("0.002")
         self.delta2.setText("0.002")
 
-    def watch(self):
-
-        self.w2.show()
 
     def keyPressEvent(self, event):
         print(event.key())
