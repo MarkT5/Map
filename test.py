@@ -5,29 +5,24 @@ from PyQt5.QtGui import QPixmap
 import requests
 
 
-class Window2(QWidget):
-    def __init__(self):
-        super().__init__()
-        uic.loadUi('help.ui', self)
-
-
 class MyWidget(QMainWindow):
     def __init__(self):
         super().__init__()
         uic.loadUi('main1.ui', self)
-        self.w2 = Window2()
+
 
         self.newans = False
         # self.pushButton.clicked.connect(self.watch)
         self.pushButton.clicked.connect(self.run)
+       # self.sbros.clicked.connect(self.sbros)
         self.lon.setText("63.057663")
         self.lat.setText("57.683716")
         self.delta1.setText("0.002")
         self.delta2.setText("0.002")
 
-    def watch(self):
+    def sbros(self):
 
-        self.w2.show()
+        self.newans = False
 
     def keyPressEvent(self, event):
 
